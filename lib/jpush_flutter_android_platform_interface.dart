@@ -8,7 +8,8 @@ abstract class JPushFlutterAndroidPlatform extends PlatformInterface {
 
   static final Object _token = Object();
 
-  static JPushFlutterAndroidPlatform _instance = MethodChannelJPushFlutterAndroid();
+  static JPushFlutterAndroidPlatform _instance =
+      MethodChannelJPushFlutterAndroid();
 
   /// The default instance of [JPushFlutterAndroidPlatform] to use.
   ///

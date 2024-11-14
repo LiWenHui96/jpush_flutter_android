@@ -1,4 +1,3 @@
-
 import 'jpush_flutter_android_platform_interface.dart';
 
 class JPushFlutterAndroid {
