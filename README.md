@@ -7,7 +7,14 @@
 
 ## 环境要求
 
-需与 [jpush_flutter 3.1.1](https://pub.dev/packages/jpush_flutter) 插件配合使用。
+需与 [jpush_flutter 3.1.8](https://pub.dev/packages/jpush_flutter) 插件配合使用。
+
+版本对应关系
+
+| jpush_flutter | jpush_flutter_android |
+|:-------------:|:---------------------:|
+|     3.1.8     |         0.0.2         |
+|  3.0.9-3.1.7  |         0.0.1         |
 
 ## 快速开始
 
@@ -62,8 +69,8 @@ android {
         JPUSH_PKGNAME     : applicationId,
         JPUSH_APPKEY      : "你的 Appkey", // JPush 上注册的包名对应的 Appkey.
         JPUSH_CHANNEL     : "developer-default", // 暂时填写默认值即可.
-        XIAOMI_APPKEY     : "MI-您的应用对应的小米的APPKEY",
-        XIAOMI_APPID      : "MI-您的应用对应的小米的APPID",
+        XIAOMI_APPKEY     : "您的应用对应的小米的APPKEY",
+        XIAOMI_APPID      : "您的应用对应的小米的APPID",
         MEIZU_APPKEY      : "MZ-您的应用对应的魅族的APPKEY",
         MEIZU_APPID       : "MZ-您的应用对应的魅族的APPID",
         VIVO_APPKEY       : "您的应用对应的VIVO的APPKEY",
