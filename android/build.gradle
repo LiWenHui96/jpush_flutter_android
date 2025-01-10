@@ -100,7 +100,7 @@ android {
 
         // 接入 vivo 厂商
         if (jPushVivoEnable) {
-            implementation 'cn.jiguang.sdk.plugin:vivo:5.5.3'
+            implementation 'cn.jiguang.sdk.plugin:vivo:5.5.3.a'
         }
 
         // 接入 oppo 厂商
