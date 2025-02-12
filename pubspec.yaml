@@ -1,6 +1,6 @@
 name: jpush_flutter_android
 description: "A Flutter plugin that integrates the Android vendor channel SDK of JPush."
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/LiWenHui96
 repository: https://github.com/LiWenHui96/jpush_flutter_android
 issue_tracker: https://github.com/LiWenHui96/jpush_flutter_android/issues
@@ -10,7 +10,7 @@ topics:
   - vendor
 
 environment:
-  sdk: '>=3.1.3 <4.0.0'
+  sdk: '>=3.1.0 <4.0.0'
   flutter: '>=3.3.0'
 
 dependencies:
