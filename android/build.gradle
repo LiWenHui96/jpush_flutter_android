@@ -85,27 +85,28 @@ android {
         // 接入 华为 厂商
         if (jPushHuaweiEnable) {
             implementation 'com.huawei.hms:push:6.13.0.300'
-            implementation 'cn.jiguang.sdk.plugin:huawei:5.6.0'
+            implementation 'cn.jiguang.sdk.plugin:huawei:5.7.0'
         }
 
         // 接入 小米 厂商
         if (jPushXiaomiEnable) {
-            implementation 'cn.jiguang.sdk.plugin:xiaomi:5.6.0'
+            implementation 'cn.jiguang.sdk.plugin:xiaomi:5.7.0'
         }
 
         // 接入 魅族 厂商
         if (jPushMeizuEnable) {
-            implementation 'cn.jiguang.sdk.plugin:meizu:5.6.0'
+            implementation 'cn.jiguang.sdk.plugin:meizu:5.7.0'
+            implementation(name: 'push-internal-5.0.3', ext: 'aar')
         }
 
         // 接入 vivo 厂商
         if (jPushVivoEnable) {
-            implementation 'cn.jiguang.sdk.plugin:vivo:5.6.0'
+            implementation 'cn.jiguang.sdk.plugin:vivo:5.7.0'
         }
 
         // 接入 oppo 厂商
         if (jPushOppoEnable) {
-            implementation 'cn.jiguang.sdk.plugin:oppo:5.6.0'
+            implementation 'cn.jiguang.sdk.plugin:oppo:5.7.0'
             implementation(name: 'com.heytap.msp-push-3.5.3', ext: 'aar')
             implementation 'com.google.code.gson:gson:2.6.2'
             implementation 'commons-codec:commons-codec:1.6'
@@ -114,7 +115,7 @@ android {
 
         // 接入 荣耀 厂商
         if (jPushHonorEnable) {
-            implementation 'cn.jiguang.sdk.plugin:honor:5.6.0'
+            implementation 'cn.jiguang.sdk.plugin:honor:5.7.0'
             implementation(name: 'HiPushSDK-8.0.12.307', ext: 'aar')
         }
     }
