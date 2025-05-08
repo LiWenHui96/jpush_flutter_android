@@ -25,6 +25,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        mavenLocal()
         maven { url "https://developer.huawei.com/repo/" }
     }
 
@@ -36,18 +37,61 @@ buildscript {
     }
 }
 
+// 本地maven
+String mavenLocalPath = project(":jpush_flutter_android").mkdir("repository").absolutePath
+
 rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
         maven { url "https://developer.huawei.com/repo/" }
-        flatDir { dirs project(":jpush_flutter_android").file("libs") }
+        maven { url mavenLocalPath }
     }
 }
 
 apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
 apply plugin: "com.huawei.agconnect"
+apply plugin: "maven-publish"
+
+// 定义多个 AAR 的发布配置
+def aarConfigs = [
+        [
+                artifactId: "heytap-msp-push",
+                version   : "3.5.3",
+                file      : "com.heytap.msp-push-3.5.3.aar"
+        ],
+        [
+                artifactId: "HiPushSDK",
+                version   : "8.0.12.307",
+                file      : "HiPushSDK-8.0.12.307.aar"
+        ],
+        [
+                artifactId: "push-internal",
+                version   : "5.0.3",
+                file      : "push-internal-5.0.3.aar"
+        ]
+]
+
+// 定义发布到本地 Maven 的任务
+// aar文件更改后，运行 ./gradlew publish
+publishing {
+    publications {
+        aarConfigs.each { config ->
+            register(config.artifactId, MavenPublication) {
+                groupId = "com.jpush.flutter"
+                artifactId = config.artifactId
+                version = config.version
+                artifact "$projectDir/libs/${config.file}"
+            }
+        }
+    }
+
+    // 显式指定本地 Maven 仓库路径
+    repositories {
+        maven { url = mavenLocalPath }
+    }
+}
 
 android {
     if (project.android.hasProperty("namespace")) {
@@ -95,7 +139,7 @@ android {
         // 接入 魅族 厂商
         if (jPushMeizuEnable) {
             implementation "cn.jiguang.sdk.plugin:meizu:5.7.0"
-            implementation(name: "push-internal-5.0.3", ext: "aar")
+            implementation "com.jpush.flutter:push-internal:5.0.3"
         }
 
         // 接入 vivo 厂商
@@ -106,7 +150,7 @@ android {
         // 接入 oppo 厂商
         if (jPushOppoEnable) {
             implementation "cn.jiguang.sdk.plugin:oppo:5.7.0"
-            implementation(name: "com.heytap.msp-push-3.5.3", ext: "aar")
+            implementation "com.jpush.flutter:heytap-msp-push:3.5.3"
             implementation "com.google.code.gson:gson:2.6.2"
             implementation "commons-codec:commons-codec:1.6"
             implementation "androidx.annotation:annotation:1.1.0"
@@ -115,7 +159,7 @@ android {
         // 接入 荣耀 厂商
         if (jPushHonorEnable) {
             implementation "cn.jiguang.sdk.plugin:honor:5.7.0"
-            implementation(name: "HiPushSDK-8.0.12.307", ext: "aar")
+            implementation "com.jpush.flutter:HiPushSDK:8.0.12.307"
         }
     }
 
