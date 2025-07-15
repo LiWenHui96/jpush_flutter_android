@@ -30,8 +30,8 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:8.1.0")
-        classpath "org.yaml:snakeyaml:2.3"
+        classpath("com.android.tools.build:gradle:8.5.1")
+        classpath "org.yaml:snakeyaml:2.4"
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
         classpath "com.huawei.agconnect:agcp:1.9.1.301"
     }
@@ -128,28 +128,28 @@ android {
         // 接入 华为 厂商
         if (jPushHuaweiEnable) {
             implementation "com.huawei.hms:push:6.13.0.300"
-            implementation "cn.jiguang.sdk.plugin:huawei:5.7.0"
+            implementation "cn.jiguang.sdk.plugin:huawei:5.8.0"
         }
 
         // 接入 小米 厂商
         if (jPushXiaomiEnable) {
-            implementation "cn.jiguang.sdk.plugin:xiaomi:5.7.0"
+            implementation "cn.jiguang.sdk.plugin:xiaomi:5.8.0"
         }
 
         // 接入 魅族 厂商
         if (jPushMeizuEnable) {
-            implementation "cn.jiguang.sdk.plugin:meizu:5.7.0"
+            implementation "cn.jiguang.sdk.plugin:meizu:5.8.0"
             implementation "com.jpush.flutter:push-internal:5.0.3"
         }
 
         // 接入 vivo 厂商
         if (jPushVivoEnable) {
-            implementation "cn.jiguang.sdk.plugin:vivo:5.7.0"
+            implementation "cn.jiguang.sdk.plugin:vivo:5.8.0"
         }
 
         // 接入 oppo 厂商
         if (jPushOppoEnable) {
-            implementation "cn.jiguang.sdk.plugin:oppo:5.7.0"
+            implementation "cn.jiguang.sdk.plugin:oppo:5.8.0"
             implementation "com.jpush.flutter:heytap-msp-push:3.5.3"
             implementation "com.google.code.gson:gson:2.6.2"
             implementation "commons-codec:commons-codec:1.6"
@@ -158,7 +158,7 @@ android {
 
         // 接入 荣耀 厂商
         if (jPushHonorEnable) {
-            implementation "cn.jiguang.sdk.plugin:honor:5.7.0"
+            implementation "cn.jiguang.sdk.plugin:honor:5.8.0"
             implementation "com.jpush.flutter:HiPushSDK:8.0.12.307"
         }
     }
