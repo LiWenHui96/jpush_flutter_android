@@ -7,13 +7,14 @@
 
 ## 环境要求
 
-需与 [jpush_flutter 3.3.2](https://pub.dev/packages/jpush_flutter) 插件配合使用。
+需与 [jpush_flutter 3.3.8](https://pub.dev/packages/jpush_flutter) 插件配合使用。
 
 版本对应关系
 
 | jpush_flutter | jpush_flutter_android |
 |:-------------:|:---------------------:|
-| 3.3.2+        | 0.0.7+                |
+| 3.3.8+        | 0.0.8                 |
+| 3.3.2+        | 0.0.7                 |
 | 3.2.4-3.3.1   | 0.0.5-0.0.6           |
 | 3.2.0-3.2.3   | 0.0.4                 |
 | 3.1.9         | **不建议使用**        |
@@ -30,19 +31,21 @@
 dependencies:
   jpush_flutter_android: ^latest_version
 
-# jpush_android:
-  # huawei:
-    # enable: false # 默认为true，可不写
-  # xiaomi:
-    # enable: false # 默认为true，可不写
-  # meizu:
-    # enable: false # 默认为true，可不写
-  # vivo:
-    # enable: false # 默认为true，可不写
-  # oppo:
-    # enable: false # 默认为true，可不写
-  # honor:
-    # enable: false # 默认为true，可不写
+jpush_android:
+  huawei:
+    enable: true # 默认为false
+  xiaomi:
+    enable: true # 默认为false
+  meizu:
+    enable: true # 默认为false
+  vivo:
+    enable: true # 默认为false
+  oppo:
+    enable: true # 默认为false
+  honor:
+    enable: true # 默认为false
+  nio:
+    enable: true # 默认为false
 ```
 
 ### 相关配置
@@ -82,7 +85,8 @@ android {
         OPPO_APPKEY       : "OP-您的应用对应的OPPO的APPKEY",
         OPPO_APPID        : "OP-您的应用对应的OPPO的APPID",
         OPPO_APPSECRET    : "OP-您的应用对应的OPPO的APPSECRET",
-        HONOR_APPID       : "您的应用对应的Honor的APPID"
+        HONOR_APPID       : "您的应用对应的Honor的APPID",
+        NIO_APPID         : "您的应用对应的蔚来的APP ID"
     ]
   }
 }
