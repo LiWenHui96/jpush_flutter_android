@@ -84,16 +84,18 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
 
-# jpush_android:
-  # huawei:
-    # enable: false # 默认为true，可不写
-  # xiaomi:
-    # enable: false # 默认为true，可不写
-  # meizu:
-    # enable: false # 默认为true，可不写
-  # vivo:
-    # enable: false # 默认为true，可不写
-  # oppo:
-    # enable: false # 默认为true，可不写
-  # honor:
-    # enable: false # 默认为true，可不写
+jpush_android:
+  huawei:
+    enable: true # 默认为false
+  xiaomi:
+    enable: true # 默认为false
+  meizu:
+    enable: true # 默认为false
+  vivo:
+    enable: true # 默认为false
+  oppo:
+    enable: true # 默认为false
+  honor:
+    enable: true # 默认为false
+  nio:
+    enable: true # 默认为false

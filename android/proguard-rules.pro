@@ -51,3 +51,12 @@
 -keepattributes Signature
 -keepattributes SourceFile,LineNumberTable
 -keep class com.hihonor.push.**{*;}
+
+#JPush 蔚来
+-ignorewarnings
+-keepattributes *Annotation*
+-keepattributes Exceptions
+-keepattributes InnerClasses
+-keepattributes Signature
+-keepattributes SourceFile,LineNumberTable
+-keep class com.skyui.push.**{*; }
