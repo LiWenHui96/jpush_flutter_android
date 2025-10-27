@@ -29,6 +29,7 @@ buildscript {
         mavenCentral()
         mavenLocal()
         maven { url "https://developer.huawei.com/repo/" }
+        maven { url "https://developer.hihonor.com/repo" }
     }
 
     dependencies {
@@ -44,6 +45,7 @@ rootProject.allprojects {
         google()
         mavenCentral()
         maven { url "https://developer.huawei.com/repo/" }
+        maven { url "https://developer.hihonor.com/repo" }
     }
 }
 
