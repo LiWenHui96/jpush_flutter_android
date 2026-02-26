@@ -85,7 +85,7 @@ android {
         testImplementation("org.jetbrains.kotlin:kotlin-test")
         testImplementation("org.mockito:mockito-core:5.0.0")
 
-        String jPushVersion = '5.9.0'
+        String jPushVersion = '6.0.1'
 
         // 接入 华为 厂商
         if (jPushHuaweiEnable) {
