@@ -1,36 +1,36 @@
 ## 0.0.10
 
-* 支持 jPush 3.4.3
+* Support jPush 3.4.3.
 
 ## 0.0.9
 
-* 修复荣耀渠道无法下载文件的问题
+* Fixed the issue of files being unable to be downloaded via Honor channel.
 
 ## 0.0.8
 
-* 支持 jPush 3.3.8
+* Supports jPush 3.3.8.
 
 ## 0.0.7
 
-* 支持 jPush 3.3.2
+* Supports jPush 3.3.2.
 
 ## 0.0.6
 
-* 使用本地maven仓库
+* Use a local Maven repository.
 
 ## 0.0.5
 
-* 支持 jPush 3.2.4
+* Supports jPush 3.2.4.
 
 ## 0.0.4
 
-* 支持 jPush 3.1.9
+* Supports jPush 3.1.9.
 
 ## 0.0.3
 
-* 支持 jPush 3.1.8
-* 小米的参数支持不添加前缀 “MI-”
+* Supports jPush 3.1.8.
+* Xiaomi's specifications support not adding the prefix "MI-".
 
 ## 0.0.1
 
-* 完成基础集成
+* Init Release.

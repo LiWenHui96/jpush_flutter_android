@@ -7,14 +7,14 @@
 
 ## 环境要求
 
-需与 [jpush_flutter 3.3.8](https://pub.dev/packages/jpush_flutter) 插件配合使用。
+需与 [jpush_flutter 3.4.3](https://pub.dev/packages/jpush_flutter) 插件配合使用。
 
 版本对应关系
 
 | jpush_flutter | jpush_flutter_android |
 |:-------------:|:---------------------:|
 | 3.4.3+        | 0.0.10                |
-| 3.3.8+        | 0.0.8                 |
+| 3.3.8+        | 0.0.9                 |
 | 3.3.2+        | 0.0.7                 |
 | 3.2.4-3.3.1   | 0.0.5-0.0.6           |
 | 3.2.0-3.2.3   | 0.0.4                 |
