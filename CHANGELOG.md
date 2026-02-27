@@ -1,3 +1,7 @@
+## 0.0.11
+
+* Improve score.
+
 ## 0.0.10
 
 * Support jPush 3.4.3.
