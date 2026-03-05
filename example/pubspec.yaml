@@ -89,13 +89,24 @@ jpush_android:
     enable: true # 默认为false
   xiaomi:
     enable: true # 默认为false
+    app_key: xxx
+    app_id: xxx
   meizu:
     enable: true # 默认为false
+    app_key: xxx
+    app_id: xxx
   vivo:
     enable: true # 默认为false
+    app_key: xxx
+    app_id: xxx
   oppo:
     enable: true # 默认为false
+    app_key: xxx
+    app_id: xxx
+    app_secret: xxx
   honor:
     enable: true # 默认为false
+    app_id: xxx
   nio:
     enable: true # 默认为false
+    app_id: xxx
