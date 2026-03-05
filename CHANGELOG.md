@@ -1,22 +1,26 @@
+## 1.0.0
+
+* Official release with support for parameter configuration.
+
 ## 0.0.11
 
-* Improve score.
+* Improved score.
 
 ## 0.0.10
 
-* Support jPush 3.4.3.
+* Added support for jPush 3.4.3.
 
 ## 0.0.9
 
-* Fixed the issue of files being unable to be downloaded via Honor channel.
+* Fixed an issue where files could not be downloaded via the Honor channel.
 
 ## 0.0.8
 
-* Supports jPush 3.3.8.
+* Added support for jPush 3.3.8.
 
 ## 0.0.7
 
-* Supports jPush 3.3.2.
+* Added support for jPush 3.3.2.
 
 ## 0.0.6
 
@@ -24,17 +28,17 @@
 
 ## 0.0.5
 
-* Supports jPush 3.2.4.
+* Added support for jPush 3.2.4.
 
 ## 0.0.4
 
-* Supports jPush 3.1.9.
+* Added support for jPush 3.1.9.
 
 ## 0.0.3
 
-* Supports jPush 3.1.8.
-* Xiaomi's specifications support not adding the prefix "MI-".
+* Added support for jPush 3.1.8.
+* Removed the requirement to add the "MI-" prefix for Xiaomi devices (as per Xiaomi's specifications).
 
 ## 0.0.1
 
-* Init Release.
+* Initial release.
