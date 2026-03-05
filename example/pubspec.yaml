@@ -85,6 +85,8 @@ flutter:
   # see https://flutter.dev/to/font-from-package
 
 jpush_android:
+  app_key: xxx
+  channel: xxx
   huawei:
     enable: true # 默认为false
   xiaomi:
@@ -93,17 +95,17 @@ jpush_android:
     app_id: xxx
   meizu:
     enable: true # 默认为false
-    app_key: xxx
-    app_id: xxx
+    app_key: xxx # MZ- 已默认配置，只需参数即可
+    app_id: xxx # MZ- 已默认配置，只需参数即可
   vivo:
     enable: true # 默认为false
     app_key: xxx
     app_id: xxx
   oppo:
     enable: true # 默认为false
-    app_key: xxx
-    app_id: xxx
-    app_secret: xxx
+    app_key: xxx # OP- 已默认配置，只需参数即可
+    app_id: xxx # OP- 已默认配置，只需参数即可
+    app_secret: xxx # OP- 已默认配置，只需参数即可
   honor:
     enable: true # 默认为false
     app_id: xxx
