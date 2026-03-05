@@ -7,18 +7,18 @@
 
 ## 环境要求
 
-需与 [jpush_flutter 3.4.3](https://pub.dev/packages/jpush_flutter) 插件配合使用。
+需与 `jpush_flutter` [![pub package](https://img.shields.io/pub/v/jpush_flutter)](https://pub.dev/packages/jpush_flutter) 插件配合使用。
 
 版本对应关系
 
 | jpush_flutter | jpush_flutter_android |
 |:-------------:|:---------------------:|
-| 3.4.3+        | 0.0.10                |
+| 3.4.3+        | 0.0.10+               |
 | 3.3.8+        | 0.0.9                 |
 | 3.3.2+        | 0.0.7                 |
 | 3.2.4-3.3.1   | 0.0.5-0.0.6           |
 | 3.2.0-3.2.3   | 0.0.4                 |
-| 3.1.9         | **不建议使用**        |
+| 3.1.9         | **不建议使用**          |
 | 3.1.8         | 0.0.3                 |
 | 3.0.9-3.1.7   | 0.0.1                 |
 
@@ -30,23 +30,37 @@
 
 ```yaml
 dependencies:
+  jpush_flutter: ^latest_version
   jpush_flutter_android: ^latest_version
 
 jpush_android:
+  app_key: xxx
+  channel: xxx
   huawei:
     enable: true # 默认为false
   xiaomi:
     enable: true # 默认为false
+    app_key: xxx
+    app_id: xxx
   meizu:
     enable: true # 默认为false
+    app_key: xxx # MZ- 已默认配置，只需参数即可
+    app_id: xxx # MZ- 已默认配置，只需参数即可
   vivo:
     enable: true # 默认为false
+    app_key: xxx
+    app_id: xxx
   oppo:
     enable: true # 默认为false
+    app_key: xxx # OP- 已默认配置，只需参数即可
+    app_id: xxx # OP- 已默认配置，只需参数即可
+    app_secret: xxx # OP- 已默认配置，只需参数即可
   honor:
     enable: true # 默认为false
+    app_id: xxx
   nio:
     enable: true # 默认为false
+    app_id: xxx
 ```
 
 ### 相关配置
@@ -62,6 +76,8 @@ jpush_android:
 [官方文档 - 厂商消息分类使用指南](https://docs.jiguang.cn/jpush/client/Android/android_channel_id)
 
 #### 配置参数
+
+从 `1.0.0` 版本起，只需在 `pubspec.yaml` 配置即可。
 
 在 `build.gradle` 中添加如下参数
 
@@ -92,8 +108,6 @@ android {
   }
 }
 ```
-
-> 后续可能会支持在 `pubspec.yaml` 中添加这些参数，暂不支持。
 
 #### 配置代码混淆
 
