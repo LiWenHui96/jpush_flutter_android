@@ -1,3 +1,8 @@
+## 1.0.1
+
+* Added support for jpush_flutter 3.4.5.
+* Removed NIO platform support.
+
 ## 1.0.0
 
 * Official release with support for parameter configuration.
