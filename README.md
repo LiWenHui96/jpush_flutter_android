@@ -13,6 +13,7 @@
 
 | jpush_flutter | jpush_flutter_android |
 |:-------------:|:---------------------:|
+| 3.4.5+        | 1.0.1                 |
 | 3.4.3+        | 0.0.10+               |
 | 3.3.8+        | 0.0.9                 |
 | 3.3.2+        | 0.0.7                 |
@@ -58,9 +59,6 @@ jpush_android:
   honor:
     enable: true # 默认为false
     app_id: xxx
-  nio:
-    enable: true # 默认为false
-    app_id: xxx
 ```
 
 ### 相关配置
@@ -102,8 +100,7 @@ android {
         OPPO_APPKEY       : "OP-您的应用对应的OPPO的APPKEY",
         OPPO_APPID        : "OP-您的应用对应的OPPO的APPID",
         OPPO_APPSECRET    : "OP-您的应用对应的OPPO的APPSECRET",
-        HONOR_APPID       : "您的应用对应的Honor的APPID",
-        NIO_APPID         : "您的应用对应的蔚来的APP ID"
+        HONOR_APPID       : "您的应用对应的Honor的APPID"
     ]
   }
 }
