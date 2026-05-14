@@ -31,7 +31,7 @@ group = "com.jpush.flutter.android"
 version = "1.0-SNAPSHOT"
 
 buildscript {
-    ext.kotlin_version = "1.8.22"
+    ext.kotlin_version = "2.2.20"
     repositories {
         google()
         mavenCentral()
@@ -41,8 +41,8 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:8.5.1")
-        classpath "org.yaml:snakeyaml:2.4"
+        classpath("com.android.tools.build:gradle:8.11.1")
+        classpath "org.yaml:snakeyaml:2.6"
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
         classpath "com.huawei.agconnect:agcp:1.9.1.301"
     }
@@ -181,11 +181,9 @@ apply plugin: "kotlin-android"
 apply plugin: "com.huawei.agconnect"
 
 android {
-    if (project.android.hasProperty("namespace")) {
-        namespace = "com.jpush.flutter.android"
-    }
+    namespace = "com.jpush.flutter.android"
 
-    compileSdk = 34
+    compileSdk = 36
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -202,7 +200,7 @@ android {
     }
 
     defaultConfig {
-        minSdk = 19
+        minSdk = 24
 
         // library 混淆 -> 随 library 引用，自动添加到 apk 打包混淆
         consumerProguardFiles "proguard-rules.pro"

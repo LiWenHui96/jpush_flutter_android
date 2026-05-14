@@ -4,10 +4,7 @@ import 'package:jpush_flutter_android/jpush_flutter_android_platform_interface.d
 import 'package:jpush_flutter_android/jpush_flutter_android_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
-class MockJPushFlutterAndroidPlatform
-    with MockPlatformInterfaceMixin
-    implements JPushFlutterAndroidPlatform {
-
+class MockJPushFlutterAndroidPlatform with MockPlatformInterfaceMixin implements JPushFlutterAndroidPlatform {
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
 }
@@ -21,7 +18,7 @@ void main() {
 
   test('getPlatformVersion', () async {
     JPushFlutterAndroid jpushFlutterAndroidPlugin = JPushFlutterAndroid();
-    MockJPushFlutterAndroidPlatform fakePlatform = MockJPushFlutterAndroidPlatform();
+    MethodChannelJPushFlutterAndroid fakePlatform = MethodChannelJPushFlutterAndroid();
     JPushFlutterAndroidPlatform.instance = fakePlatform;
 
     expect(await jpushFlutterAndroidPlugin.getPlatformVersion(), '42');
