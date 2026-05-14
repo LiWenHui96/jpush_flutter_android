@@ -17,6 +17,7 @@ dependencies:
   flutter:
     sdk: flutter
 
+  jpush_flutter: ^3.4.5
   jpush_flutter_android:
     # When depending on this package from a real application you should use:
     #   jpush_flutter_android: ^x.y.z
@@ -103,8 +104,5 @@ jpush_android:
     app_id: xxx # OP- 已默认配置，只需参数即可
     app_secret: xxx # OP- 已默认配置，只需参数即可
   honor:
-    enable: true # 默认为false
-    app_id: xxx
-  nio:
     enable: true # 默认为false
     app_id: xxx
